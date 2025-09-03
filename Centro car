@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Centro Car</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #0f1115;
+      color: #e0e0e0;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+      padding: 40px 20px;
+      text-align: center;
+      color: #00ffff;
+      font-family: 'Orbitron', sans-serif;
+      box-shadow: 0 0 20px #00ffff;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      background-color: #1c1f26;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: #00ffff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffffff;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #00ffff;
+      font-family: 'Orbitron', sans-serif;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+      font-size: 1.1em;
+    }
+
+    ul li::before {
+      content: "🔧 ";
+      margin-right: 5px;
+    }
+
+    .estrutura {
+      background-color: #1c1f26;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #00ffff55;
+    }
+
+    footer {
+      background-color: #0f2027;
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 0.9em;
+    }
+
+    /* Botão WhatsApp */
+    .whatsapp-button {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 0 10px #25d366;
+      z-index: 1000;
+      transition: transform 0.3s;
+    }
+
+    .whatsapp-button:hover {
+      transform: scale(1.1);
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+      nav {
+        flex-direction: column;
+      }
+      nav a {
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Centro Car</h1>
+    <p>José Lopes Palma, 64 – Bairro Residencial Paraíso</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#servicos">Serviços</a>
+    <a href="#estrutura">Estrutura</a>
+  </nav>
+
+  <section id="sobre">
+    <h2>🚗 Sobre Nós</h2>
+    <p>Com mais de 15 anos de experiência em Paraíso, Minas Gerais, o Centro Car é referência em manutenção automotiva. Nossa missão é oferecer diagnósticos precisos e soluções eficientes com tecnologia de ponta e atendimento personalizado.</p>
+  </section>
+
+  <section id="servicos">
+    <h2>🛠️ Serviços</h2>
+    <ul>
+      <li>Troca de óleo e filtros</li>
+      <li>Suspensão</li>
+      <li>Freios</li>
+      <li>Troca de correia dentada</li>
+      <li>Revisão em câmbio</li>
+      <li>Manutenção preventiva</li>
+    </ul>
+  </section>
+
+  <section id="estrutura" class="estrutura">
+    <h2>🔍 Estrutura Tecnológica</h2>
+    <p>Nosso espaço é equipado com ferramentas especializadas, torquímetros, multímetros e scanners automotivos de última geração. Contamos com profissionais altamente capacitados para garantir segurança e performance ao seu veículo.</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Centro Car. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Botão WhatsApp -->
+  <a href="https://wa.me/553536700089" class="whatsapp-button" target="_blank" title="Fale conosco pelo WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+</body>
+</html>
